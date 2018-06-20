@@ -128,7 +128,15 @@
     //
     // test if a specific major diagonal on this board contains a conflict
     hasMajorDiagonalConflictAt: function(majorDiagonalColumnIndexAtFirstRow) {
-      return false; // fixme
+      // return false; // fixme
+      let columnIterator = majorDiagonalColumnIndexAtFirstRow;
+      let rows = this.rows();
+      let sum = 0;
+      for (let i = 0; i < rows.length-majorDiagonalColumnIndexAtFirstRow; i++) {
+        sum += rows[i][columnIterator];
+        columnIterator++;
+      }
+      return (sum > 1);
     },
 
     // test if any major diagonals on this board contain conflicts
