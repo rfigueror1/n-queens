@@ -17,7 +17,12 @@
 
 window.findNRooksSolution = function(n) {
   var solution = undefined; //fixme
+  //use row and col conflict functions
+  //use get col/row indexes functions
 
+  //generates matrixes of different possibilities -- recursion?
+  //check those possibilities for row/col conflicts
+  //return that number
   console.log('Single solution for ' + n + ' rooks:', JSON.stringify(solution));
   return solution;
 };
