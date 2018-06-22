@@ -160,7 +160,6 @@
     // test if a specific minor diagonal on this board contains a conflict
     hasMinorDiagonalConflictAt: function(minorDiagonalColumnIndexAtFirstRow) {
       let rows = this.rows();
-      
       for(let i = 0; i < rows.length; i++) {
         let sum = 0;
         let minor = minorDiagonalColumnIndexAtFirstRow;
